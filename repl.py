@@ -1,6 +1,4 @@
 import replicate
-import os
-os.environ['REPLICATE_API_TOKEN'] = "1ceca98a76234217cf69af35b55f81651e441ed5"
 
 def fetch_replicate(imageUrl, room, theme):
 
