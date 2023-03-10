@@ -20,9 +20,7 @@ async def create_upload_file(file: bytes = File(...), room: str = Form(...), the
     image.save("image/my_image.jpg")
     output = fetch_replicate('image/my_image.jpg' ,room, theme)
     json_response = {
-        'image_url' : output[1],
-        'room': room,
-        'theme': theme
+        'image_url' : output[1]
     }
     return json_response
 
